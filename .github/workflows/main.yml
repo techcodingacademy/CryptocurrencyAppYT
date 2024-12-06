@@ -45,7 +45,7 @@ jobs:
         run: chmod +x ./gradlew
       
       - name: Build APK
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --warning-mode all --stacktrace
 
       
       - name: Upload APK
